@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.spec.javaee.api.test;
+package org.jboss.spec.jakartaee.api.test;
 
 import javax.annotation.*;
 import javax.annotation.security.*;
@@ -145,8 +145,8 @@ import javax.xml.ws.wsaddressing.*;
 
 /**
  * This class checks the dependencies as exported by the
- * "spec-api" module to ensure that compilation of all Java EE
- * 7 Specification Platform APIs are reachable.  As such, no runtime
+ * "spec-api" module to ensure that compilation of all Jakarta EE
+ * 8 Specification Platform APIs are reachable.  As such, no runtime
  * assertions are required here, only references.  If this class compiles, 
  * all noted references are reachable within the spec-api dependency chain. 
  * 

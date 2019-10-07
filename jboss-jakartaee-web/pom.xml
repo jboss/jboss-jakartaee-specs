@@ -6,17 +6,17 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>28</version>
+    <version>35</version>
     <relativePath />
   </parent>
 
   <groupId>org.jboss.spec</groupId>
-  <artifactId>jboss-javaee-web-8.0</artifactId>
-  <version>1.0.5.Final-SNAPSHOT</version>
+  <artifactId>jboss-jakartaee-web-8.0</artifactId>
+  <version>1.0.0.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>JBoss Java EE 8 Web Profile APIs</name>
-  <description>JBoss Java EE 8 Web Profile APIs</description>
+  <name>JBoss Jakarta EE 8 Web Profile APIs</name>
+  <description>JBoss Jakarta EE 8 Web Profile APIs</description>
 
   <licenses>
     <license>
@@ -27,9 +27,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:jboss/jboss-javaee-specs.git</connection>
-    <developerConnection>scm:git:git@github.com:jboss/jboss-javaee-specs.git</developerConnection>
-    <url>https://github.com/jboss/jboss-javaee-specs</url>
+    <connection>scm:git:git@github.com:jboss/jboss-jakartaee-specs.git</connection>
+    <developerConnection>scm:git:git@github.com:jboss/jboss-jakartaee-specs.git</developerConnection>
+    <url>https://github.com/jboss/jboss-jakartaee-specs</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -42,7 +42,7 @@
     <dependencies>
       <dependency>
         <groupId>org.jboss.spec</groupId>
-        <artifactId>jboss-javaee-8.0</artifactId>
+        <artifactId>jboss-jakartaee-8.0</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -52,37 +52,37 @@
 
   <dependencies>
 
-    <!-- External JavaEE spec APIs (not part of the JBoss JavaEE Specs project) -->
+    <!-- External Jakarta EE spec APIs (not part of the JBoss Jakarta EE Specs project) -->
     <dependency>
-      <groupId>javax.enterprise</groupId>
-      <artifactId>cdi-api</artifactId>
+      <groupId>jakarta.enterprise</groupId>
+      <artifactId>jakarta.enterprise.cdi-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.inject</groupId>
-      <artifactId>javax.inject</artifactId>
+      <groupId>jakarta.inject</groupId>
+      <artifactId>jakarta.inject-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.json</groupId>
-      <artifactId>javax.json-api</artifactId>
+      <groupId>jakarta.json</groupId>
+      <artifactId>jakarta.json-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.json.bind</groupId>
-      <artifactId>javax.json.bind-api</artifactId>
+      <groupId>jakarta.json.bind</groupId>
+      <artifactId>jakarta.json.bind-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.persistence</groupId>
-      <artifactId>javax.persistence-api</artifactId>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.security.enterprise</groupId>
-      <artifactId>javax.security.enterprise-api</artifactId>
+      <groupId>jakarta.security.enterprise</groupId>
+      <artifactId>jakarta.security.enterprise-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
     </dependency>
 
-    <!-- JBoss JavaEE API Specs Projects -->
+    <!-- JBoss Jakarta EE API Specs Projects -->
     <dependency>
       <groupId>org.jboss.spec.javax.annotation</groupId>
       <artifactId>jboss-annotations-api_1.3_spec</artifactId>
@@ -125,7 +125,7 @@
     </dependency>
     <dependency>
       <groupId>org.jboss.spec.javax.transaction</groupId>
-      <artifactId>jboss-transaction-api_1.2_spec</artifactId>
+      <artifactId>jboss-transaction-api_1.3_spec</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jboss.spec.javax.websocket</groupId>
