@@ -34,7 +34,7 @@
 
   <issueManagement>
     <system>jira</system>
-    <url>http://jira.jboss.com/jira/browse/JBEE</url>
+    <url>https://issues.redhat.com/browse/JBEE</url>
   </issueManagement>
 
   <modules>
